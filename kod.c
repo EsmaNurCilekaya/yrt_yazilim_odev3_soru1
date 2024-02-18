@@ -8,6 +8,13 @@ int main(){
 	char hatalikonum[21];
 	int flag=1;
 	int i,a=0,b=0;
-  
-  return 0;
+  	while(1){
+		printf("\nlutfen tahmininizi kucuk harflerle ve 5 harf olacak sekilde giriniz");
+		scanf(" %s", tahmin);
+		printf("girdi: %s\t", tahmin);
+		if (strcmp(tahmin, kelime) == 0) {
+            		printf("\nTebrikler! Gizli kelimeyi buldunuz: %s\n", kelime);
+            		break;
+        	}
+  	return 0;
 }
