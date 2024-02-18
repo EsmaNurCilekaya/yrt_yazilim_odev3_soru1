@@ -33,6 +33,16 @@ int main(){
 				olmayan[b]=tahmin[i];
 				b++;
 			}
-    	}
+    		}
+		printf("\tyeri yanlis harfler: ");
+		for(i=0;i<a;i++){
+			printf("%c,", hatalikonum[i]);
+		}
+		printf("\tolmayan harfler: ");
+		for(i=0;i<b;i++){
+			printf("%c,", olmayan[i]);
+		}
+	}
+	printf("%s",kelime);
   	return 0;
 }
