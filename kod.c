@@ -16,5 +16,23 @@ int main(){
             		printf("\nTebrikler! Gizli kelimeyi buldunuz: %s\n", kelime);
             		break;
         	}
+		for (i=0;i<6;i++){
+			//harf doğru yerdeyse yazdır
+        		if (tahmin[i] == kelime[i]) {
+            			printf("%c", tahmin[i]);
+        		}
+            		//Harf hedef kelime de varsa ama yanlış yerdeyse,hatalikonum dizisine ekle
+        		else if (strchr(kelime, tahmin[i]) != NULL) {
+            			printf("_");
+				hatalikonum[a]=tahmin[i];
+				a++;
+        		}
+        		// Harf hedef kelime de yoksa,olmayan dizisine ekle
+        		else {
+            			printf("_");
+				olmayan[b]=tahmin[i];
+				b++;
+			}
+    	}
   	return 0;
 }
